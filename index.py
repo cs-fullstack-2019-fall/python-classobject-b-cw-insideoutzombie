@@ -10,7 +10,6 @@ class Dog:
         self.gender = gender
     def printTheDog(self):
         print(f"{self.name}, {self.breed}, {self.color}, {self.gender}")
-
 def problem1():
     dogBreed1 = Dog("Turbo", "PitBull", "Tan", "Male")
     dogBreed1.printTheDog()
@@ -19,21 +18,17 @@ def problem1():
 ##### We will keep having this problem until EVERYONE gets it right without help
 # Create a function that has a loop that quits with the equal sign.
 # If the user doesn't enter the equal sign, ask them to input another string.
+# !! : make each problem a function.
 userInput = ""
 while userInput != '=':
     userInput = input("Try again hit '=' ")
 
 ### Problem 3:
 # Create a class Product that represents a product sold online. A product has a name, price, and quantity.
-#
 # The class should have several functions:
-#
 # a) One function that can change the name of the product.
-#
 # b) Another function that can change the name and price of the product.
-#
 # c) A last function that can change the name, price, and quantity of the product.
-#
 # Create an object of Product and print all of it's attributes.
 class Product:
     def __init__(self, name, price, quantity):
@@ -67,6 +62,6 @@ def problem2():
     newProduct2.printProduct()
 
 def main():
-    # problem1()
+    problem1()
     problem2()
 main()
